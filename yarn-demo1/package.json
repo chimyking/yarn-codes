@@ -1,0 +1,7 @@
+{
+  "name": "yarn-demo1",
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
