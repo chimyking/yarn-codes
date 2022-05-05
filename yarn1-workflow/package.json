@@ -1,9 +1,12 @@
 {
   "name": "yarn1-workflow",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "yarn1-workflow",
   "private": true,
   "main": "index.js",
+  "scripts": {
+    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
+  },
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21"
